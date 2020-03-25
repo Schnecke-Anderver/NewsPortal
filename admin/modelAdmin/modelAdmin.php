@@ -43,7 +43,7 @@ class modelAdmin{
 		unset($_SESSION['userId']); 
 		unset($_SESSION['name']); 
 		unset($_SESSION['status']); 
-		session destroy(); 
+		session_destroy(); 
 		return;
 	}
 }

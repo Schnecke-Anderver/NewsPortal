@@ -2,7 +2,7 @@
 class controllerAdmin {
 
 	public static function formLoginSite() {
-		include_once ('viewAdmin/formLogin.php)';
+		include_once ('viewAdmin/formLogin.php');
 	}
 	// Форма авторизации админа
 	public static function loginAction(){
