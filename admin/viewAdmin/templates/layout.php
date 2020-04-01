@@ -24,10 +24,12 @@
 		<li role="button">'. $_SESSI0N["name"].
 		'<a href="logout" style="display: inline:"> Выйти <i class="fa fa-sign-out"></i>
 		</a></li></ul>';
-	if (isset($_SESSION["status"])  && $_SESSION["status"]=="admin") {
-		echo '<h4><a href="../" target=_blank>WEB SITE </a>'; 
-		echo ' &#187 <a href="categoryAdmin">Categories </a>'; 
-		echo ' &#187 <a href="newsAdmin">NewsList </a>';
+	if (isset($_SESSION["status"]) && $_SESSION["status"]=="admin") {
+
+		echo '<h4><a href="../" target=_blank>WEB SITE News portal</a>'; 
+		echo '&#187 <a href="./" >Start admin</a>';
+		echo ' &#187 <a href="categoryAdmin"> News Categories </a>'; 
+		echo ' &#187 <a href="newsAdmin">News List </a>';
 		echo ' </h4>'; 
 	}else {
 		echo '<h4>У вас нет прав!</h4>';

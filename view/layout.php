@@ -26,7 +26,7 @@
 			<li>
 				<form action="search">
 					<input type="text" name="otsi">
-					<input type="submit" name="Otsi">
+					<input type="submit" value="Otsi">
 				</form>
 			</li>
 		</div>

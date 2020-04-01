@@ -8,13 +8,13 @@ if($path == '' OR $path == 'index' OR $path == 'index.php') {
 	$response = Controller::StartSite();
 }
 elseif($path == 'all') {
-	$response =Controller::AllNews();
+	$response = Controller::AllNews();
 }
 elseif($path == 'category' and isset($_GET['id'])) {
-	$response =Controller::NewsByCatID($_GET['id']);
+	$response = Controller::NewsByCatID($_GET['id']);
 }
 elseif($path == 'news' and isset($_GET['id'])) {
-	$response =Controller::NewsByID($_GET['id']);
+	$response = Controller::NewsByID($_GET['id']);
 }
 elseif($path == 'insertcomment' and isset ($_GET['comment'], $_GET ['id']))
 {
@@ -26,7 +26,7 @@ elseif ($path == 'registerForm')
 	{   // form register
 		$response = Controller::registerForm();
 }
-elseif ($path =='registerAnswer') {
+elseif ($path == 'registerAnswer') {
 	// register user
 	$response = Controller::registerUser();
 }

@@ -1,15 +1,15 @@
 <?php
 $host = explode('?', $_SERVER['REQUEST_URI'])[0]; 
-$num=substr_count($host,'/'); 
-$path=explode('/', $host)[$num];
+$num = substr_count($host,'/'); 
+$path = explode('/', $host)[$num];
 
-if ($path == '' OR $path ='index.php')
+if ($path == '' OR $path == 'index.php')
 {
 	//Главная страница
 	$response = controllerAdmin::formLoginSite();
 }
 //-----ВХОД------
-elseif ($path = 'login')
+elseif ($path == 'login')
 {
 	//Форма входа
 	$response = controllerAdmin::loginAction(); 
@@ -18,6 +18,10 @@ elseif ($path == 'logout')
 {
 	//Выход
 	$response = controllerAdmin::logoutAction();
+}
+//------------listNews
+elseif ($path =='newsAdmin') {
+	$response = controllerAdminNews::NewsList();
 }
 else
 {	//--страница не существует--

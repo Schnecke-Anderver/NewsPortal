@@ -2,9 +2,10 @@
 <html>   
 	<head>
 		<meta charset="utf-8">
-		<title>Register   User</title>
-		<link href = "public/css/bootstrap.min.css" rel="stylesheet">
+		<title>Register User</title>
+		<link href="public/css/bootstrap.min.css" rel="stylesheet">
 		<link href = "public/css/login.css"  rel="stylesheet"> 
+		
 	</head> 
 	<body>
 
