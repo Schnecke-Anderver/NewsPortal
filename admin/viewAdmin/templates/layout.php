@@ -3,7 +3,7 @@
 <title>Dashboard</title>
 <link href="public/css/bootstrap.css" rel="stylesheet">
 <link href="public/css/mystyle.css" rel="stylesheet">
-<!-- Font Awesome --> <link rel="stylesheet" href="public/css/font-awesome.min.css">
+<!-- Font Awesome --> <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 <!-- SCRIPT -->
 <script src="public/js/jquery.min.js"></script>
 <script src="public/js/bootstrap.min.js"></script>
