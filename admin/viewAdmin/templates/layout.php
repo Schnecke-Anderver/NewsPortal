@@ -1,16 +1,18 @@
 <html>
 <head>
 <title>Dashboard</title>
+<meta charset="utf-8"> 
 <link href="public/css/bootstrap.css" rel="stylesheet">
-<link href="public/css/mystyle.css" rel="stylesheet">
+<link href="./css/mystyle.css" rel="stylesheet" type="text/css" /> 
+<link href="./css/login.css" rel="stylesheet" type="text/css" /> 
 <!-- Font Awesome --> <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 <!-- SCRIPT -->
-<script src="public/js/jquery.min.js"></script>
-<script src="public/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="public/js/ajaxupload.3.5.js"></script>
+<script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/ajaxupload.3.5.js" type="text/javascript" ></script>
 </head>
 <body>
-
+	
 <div class="container">
 <!----> <?php
 	if (isset($_SESSION["userId"])  && isset($_SESSION["sessionId"]))
@@ -21,8 +23,7 @@
 <div class="container-fluid">
 	<?php
 		echo '<ul class="nav nav-pills pull-right"> 
-		<li role="button">'. $_SESSI0N["name"].
-		'<a href="logout" style="display: inline:"> Выйти <i class="fa fa-sign-out"></i>
+		<li role="button">'.$_SESSION["name"].'<a href="logout" style="display: inline:"> Выйти <i class="fa fa-sign-out"></i>
 		</a></li></ul>';
 	if (isset($_SESSION["status"]) && $_SESSION["status"]=="admin") {
 
